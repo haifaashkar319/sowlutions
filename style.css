@@ -1,0 +1,126 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e1ffe3;
+}
+
+header {
+    background-color: #8dd193;
+    color: white;
+    padding: 10px 0;
+}
+
+#title {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #183318;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 0;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    height: 50px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #c4c4c4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content p {
+    font-weight: bold;
+}
+
+.modal-content img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #817b7b;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.pagination-container a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.pagination-container a.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+#items {
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+#items ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    border: #817b7b 1px solid;
+    padding: 10px;
+    font-size: 20px;
+
+    
+}
+
+li:nth-child(odd) {
+    background-color: #c4fac8;
+}
+
+.container {
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
